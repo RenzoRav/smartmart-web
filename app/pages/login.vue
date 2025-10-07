@@ -92,8 +92,8 @@ async function aoEnviarFormulario () {
 
         <div class="w-full max-w-md">
           <div class="flex justify-center mb-6">
-            <img src="../assets/img/logosuper.jpg" alt="Logo" class="h-32 object-contain" />
-          </div>
+              <img src="@/assets/img/logosuper.png" alt="Logo" class="logo" />
+            </div>
 
           <p class="text-[#0b1324] font-medium text-center mb-6">Acesse sua conta</p>
 
@@ -161,4 +161,7 @@ async function aoEnviarFormulario () {
 :deep(.p-password .p-password-toggle-mask-icon){
   color: rgb(71 85 105);
 }
+
+.logo{height:144px;object-fit:contain;filter:drop-shadow(0 0 4px rgba(0,0,0,.4));transition:transform .3s ease}
+
 </style>
