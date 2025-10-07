@@ -1,75 +1,43 @@
-# Nuxt Minimal Starter
+# SmartMart Web — Controle de Estoque (Nuxt + Supabase)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+> Uma aplicação **SPA** para controle simples de estoque, com cadastro de produtos, categorias e movimentações de entrada/saída.
+> OBS: Para fazer o login bastar inserir qualuer coisa em ambos os campos.
 
-## Setup
+---
 
-Make sure to install dependencies:
+## Visão Geral
+O **SmartMart Web** é um projeto acadêmico desenvolvido com **Nuxt 4** e **Supabase** que oferece um painel simples para gestão de estoque. O foco é praticar front-end moderno (Vue 3 + PrimeVue) consumindo um BaaS (Supabase) sem a necessidade de um backend próprio.
 
-```bash
-# npm
-npm install
+---
 
-# pnpm
-pnpm install
+## Demonstração (Deploy)
+- **GitHub Pages:** https://renzorav.github.io/smartmart-web/
 
-# yarn
-yarn install
+> Observação: o projeto é gerado estaticamente e publicado no Pages. O `baseURL` do Nuxt está configurado para `/smartmart-web/` em produção.
 
-# bun
-bun install
-```
+---
 
-## Development Server
+## Funcionalidades
+- **Dashboard:** métricas rápidas (produtos ativos/inativos, saldo do período), top movimentados e últimos movimentos.
+- **Produtos:** CRUD com nome, SKU, preço, custo, status e **categoria**.
+- **Categorias:** cadastro e associação com produtos.
+- **Movimentos de Estoque:** registro de **ENTRADA** e **SAÍDA** (compra, venda, devolução, ajuste, etc.).
+- **Usuários:** gerenciamento simples (username, senha, papel) para fins acadêmicos.
 
-Start the development server on `http://localhost:3000`:
+---
 
-```bash
-# npm
-npm run dev
+## Tecnologias
+- **Framework:** Nuxt 4 (SPA), Vue 3
+- **UI:** PrimeVue, PrimeIcons, Tailwind (via Vite plugin)
+- **BaaS:** Supabase 
+- **Build/Dev:** Vite, TypeScript 
+- **Deploy:** GitHub Pages
 
-# pnpm
-pnpm dev
+---
 
-# yarn
-yarn dev
+## Modelo Logico
 
-# bun
-bun run dev
-```
+<img width="1241" height="691" alt="image" src="https://github.com/user-attachments/assets/4bd750cd-c025-4051-aa5a-aa7a42c40881" />
 
-## Production
+> As print da aplicação esta dentro de img/prints
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
