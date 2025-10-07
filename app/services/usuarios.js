@@ -4,13 +4,13 @@ export default function useUsuarioService() {
   const supabase = useSupabaseClient()
 
   const listar = async () => {
-    const { data, error } = await supabase.from('ususarios').select('*')
+    const { data, error } = await supabase.from('usuarios').select('*')
     if (error) throw error
     return data
   }
 
   const buscar = async (id) => {
-    const { data, error } = await supabase.from('ususarios').select('*').eq('id', id).single()
+    const { data, error } = await supabase.from('usuarios').select('*').eq('id', id).single()
     if (error) throw error
     return data
   }
