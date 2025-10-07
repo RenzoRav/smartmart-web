@@ -13,7 +13,7 @@ O **SmartMart Web** é um projeto acadêmico desenvolvido com **Nuxt 4** e **Sup
 ## Demonstração (Deploy)
 - **GitHub Pages:** https://renzorav.github.io/smartmart-web/
 
-> Observação: o projeto é gerado estaticamente e publicado no Pages. O `baseURL` do Nuxt está configurado para `/smartmart-web/` em produção.
+> OBS: o projeto é gerado estaticamente e publicado no Pages. O `baseURL` do Nuxt está configurado para `/smartmart-web/` em produção.
 
 ---
 
