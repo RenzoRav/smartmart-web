@@ -1,7 +1,7 @@
 # SmartMart Web — Controle de Estoque (Nuxt + Supabase)
 
 > Uma aplicação **SPA** para controle simples de estoque, com cadastro de produtos, categorias e movimentações de entrada/saída.
-> OBS: Para fazer o login bastar inserir qualuer coisa em ambos os campos.
+> OBS: Para fazer o login bastar inserir qualquer coisa em ambos os campos.
 
 ---
 
