@@ -5,6 +5,12 @@ export default defineNuxtConfig({
   pages: true,
   ssr: false,
 
+  app: {
+    baseURL: process.env.NODE_ENV === 'production' ? '/smartmart-web/' : '/'
+  },
+
+  nitro: { preset: 'github-pages' },
+
   runtimeConfig: {
     public: {
       api: '/api',
@@ -13,7 +19,6 @@ export default defineNuxtConfig({
     },
   },
 
-  routeRules: { '/': { redirect: '/login', ssr: false } },
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
 
