@@ -45,7 +45,7 @@ async function aoEnviarFormulario () {
     toast.add({
       severity: 'success',
       summary: 'Bem-vindo!',
-      detail: 'Login simulado com sucesso.',
+      detail: 'Login realizado com sucesso.',
       life: 1500
     })
 
