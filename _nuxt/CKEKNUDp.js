@@ -1,1 +1,0 @@
-import{_ as o,c as a,a as t,o as s}from"#entry";const c={},n={class:"max-w-5xl mx-auto"};function r(l,e){return s(),a("div",n,[...e[0]||(e[0]=[t("h1",{class:"text-2xl font-bold mb-4"},"Home",-1),t("p",{class:"text-slate-600"},"Bem-vindo ao painel SmartMart.",-1)])])}const x=o(c,[["render",r]]);export{x as default};
