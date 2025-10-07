@@ -16,19 +16,19 @@ export default function useUsuarioService() {
   }
 
   const criar = async (usuario) => {
-    const { data, error } = await supabase.from('ususarios').insert([usuario]).select()
+    const { data, error } = await supabase.from('usuarios').insert([usuario]).select()
     if (error) throw error
     return data[0]
   }
 
   const atualizar = async (id, usuario) => {
-    const { data, error } = await supabase.from('ususarios').update(usuario).eq('id', id).select()
+    const { data, error } = await supabase.from('usuarios').update(usuario).eq('id', id).select()
     if (error) throw error
     return data[0]
   }
 
   const excluir = async (id) => {
-    const { error } = await supabase.from('ususarios').delete().eq('id', id)
+    const { error } = await supabase.from('usuarios').delete().eq('id', id)
     if (error) throw error
     return true
   }
